@@ -1,9 +1,14 @@
-%body
-	%form{:action => '/leads', :method => 'POST'}
-		Killer Email Signup Form
-		%br
-		%input{:type => 'name', :name => 'name', :placeholder => 'Enter your name here'}
-		%br
-		%input{:type => 'email', :name => 'email', :placeholder => 'Enter your email here'}
-		%br
-		%input{:type => 'submit', :value=>'GO'}
+%section
+  %h1 Killer Sign Up Form
+  = form_for @lead do |f|
+    %p
+      = f.label :name
+      %br
+      = f.text_field  :name
+    %p
+      = f.label :email
+      %br
+      = f.text_field :email
+    %p.button
+      = f.submit "Go"
+
