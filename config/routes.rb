@@ -1,7 +1,7 @@
 Trainspotting::Application.routes.draw do
   # get "leads/new"
 
-  resources :leads
+  resources :leads, only: [:new, :create]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
