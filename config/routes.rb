@@ -3,6 +3,8 @@ Trainspotting::Application.routes.draw do
 
   resources :leads, only: [:new, :create]
 
+  match '/thanks' => 'leads#thanks'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
