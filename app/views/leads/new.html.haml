@@ -1,6 +1,7 @@
 %section
   %h1 Killer Sign Up Form
   = form_for @lead do |f|
+    = f.error_messages
     %p
       = f.label :name
       %br
