@@ -5,8 +5,11 @@ class LeadsController < ApplicationController
 
   def create
   	@lead = Lead.new(params[:lead])
-    @lead.save
-    redirect_to thanks_url
+  	if @lead.save
+    	redirect_to thanks_url
+    else 
+    	render 'leads/new'
+    end
   end
 
 end

@@ -7,7 +7,8 @@ gem 'rails', '3.2.7'
 
 gem 'sqlite3'
 gem 'haml'
-gem 'dynamic_form' # for use with error_messages as described in http://guides.rubyonrails.org/active_record_validations_callbacks.html#displaying-validation-errors-in-the-view
+gem 'dynamic_form' # for use with error_messages as described in 
+# http://guides.rubyonrails.org/active_record_validations_callbacks.html#displaying-validation-errors-in-the-view
 
 
 # Gems used only for assets and not required
